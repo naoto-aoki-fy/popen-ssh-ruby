@@ -1,1 +1,1 @@
-# ruby `net::ssh` emulation layer for `ssh` command
+# ruby `Net::SSH` emulation layer for `ssh` command
