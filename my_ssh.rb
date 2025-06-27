@@ -64,7 +64,7 @@ module MySSH
             ios = [@stdout, @stderr]
             loop do
                 break if ios.length == 0
-                ready = IO.select(ios, nil, nil, 5)
+                ready = IO.select(ios, nil, nil, nil)
                 # puts "ready=#{ready} stdout=#{@stdout} stderr=#{@stderr}"
                 break unless ready
 
