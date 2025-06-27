@@ -87,7 +87,7 @@ module MySSH
                 end
             end
             exit_status = @wait_thr.value
-            puts "Process exited with #{exit_status.exitstatus}"
+            # puts "Process exited with #{exit_status.exitstatus}"
             @on_close_block.call()
         end
     end
